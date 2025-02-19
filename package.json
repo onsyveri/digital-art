@@ -2,9 +2,10 @@
   "name": "digital-art",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://onsyveri.github.io/digital-art/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export", 
+    "build": "next build", 
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d out"
