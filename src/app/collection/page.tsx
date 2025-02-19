@@ -12,6 +12,8 @@ type Art = {
 export default function Collection() {
   const [data, setData] = useState<Art[]>([]);
   const basePath = process.env.NODE_ENV === "production" ? "/digital-art" : "";
+  console.log("Basepath er: " + basePath);
+  console.log("process.env er: " + process.env.NODE_ENV)
 
   useEffect(() => {
     fetch(`${basePath}/art-collection.json`) // Husk å lagre JSON-filen i public/
