@@ -11,9 +11,10 @@ type Art = {
 
 export default function Collection() {
   const [data, setData] = useState<Art[]>([]);
+  const basePath = process.env.NODE_ENV === "production" ? "/MITT_REPO_NAVN" : "";
 
   useEffect(() => {
-    fetch("/art-collection.json") // Husk å lagre JSON-filen i public/
+    fetch(`${basePath}/art-collection.json`) // Husk å lagre JSON-filen i public/
       .then((res) => res.json())
       .then((jsonData) => setData(jsonData))
       .catch((error) => console.error("Feil ved lasting av data:", error));
