@@ -1,0 +1,63 @@
+/* Stil for hovedbeholderen */
+.container {
+max-width: 3840px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Stil for sidens tittel */
+.title {
+    width: 20vw;
+    margin: auto;
+    font-size: 2.5vw;
+    font-weight: bold;
+    border-bottom: 5px solid #ff1089;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Grid-layout for kortene */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+gap: 20px;
+}
+
+/* Stil for hvert kort */
+.card {
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center;
+transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+/* Stil for bildene */
+.card img {
+width: 100%;
+min-width: 320px;
+max-width: 1080px;
+min-height: 566px;
+max-height: 1350px;
+object-fit: cover;
+border-radius: 8px;
+}
+
+/* Stil for navn og tittel */
+.card h2 {
+font-size: 1.5rem;
+margin: 10px 0;
+color: #333;
+}
+
+.card p {
+font-size: 1rem;
+color: #666;
+}
